@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Portfolio - Lerato Moshoadiba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?
+    family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme
+dark:text-white">
+
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]
+    dark:hidden">
+        <img src="./images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex
+    items-center justify-between z-50">
+
+        <img src="./images/logo.png" alt="logo"
+        class="w-28 cursor-pointer mr-14 dark:hidden">
+
+        <img src="./images/logo_dark.png" alt="logo"
+        class="w-28 cursor-pointer mr-14 hidden dark:block">
+
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8
+        rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo
+        dark:border dark:border-white/50 dark:bg-transparent">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+            <button onClick="toggleTheme()">
+                <img src="./images/moon_icon.png" alt=""
+            class="w-6 dark:hidden">
+            <img src="./images/sun_icon.png" alt=""
+            class="w-6 hidden dark:block">
+        </button>
+        
+        
+            <a href="#contact"
+             class="hidden lg:flex items-center gap-3 px-10 py-2.5 border
+             border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50" >
+             Contact 
+             <img src="./images/arrow-icon.png" alt=""
+             class="w-3 dark:hidden">
+
+             <img src="./images/arrow-icon-dark.png" alt=""
+             class="w-3 hidden dark:block">
+
+            </a>  
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="./images/menu-black.png" alt="" class="w-6 dark:hidden" >
+                <img src="./images/menu-white.png" alt="" class="w-6 hidden dark:block" >
+            </button>
+
+        </div>
+<!-----------------Mobile Menu---------------------->
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed 
+        -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500
+        font-Ovo dark:bg-darkHover dark:text-white">
+
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./images/close-black.png" alt="" class="w-5
+                cursor-pointer dark:hidden">
+                <img src="./images/close-white.png" alt="" class="w-5
+                cursor-pointer hidden dark:block">
+            </div>
+
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+            <li><a href="#services" onclick="closeMenu()">Services</a></li>
+            <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact Me</a></li>
+        </ul>
+
+        
+    </nav>
+
+<!-----------------Header--------------------->
+
+<div class="w-11/12 max-w-3x1 text-center mx-auto h-screen flex flex-col
+items-center justify-center gap-2">
+    <img src="./images/profile-img.png" alt="" class="rounded-full w-52">
+    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+        Hi! I am Lerato Moshoadiba <img src="./images/hand-icon.png" alt="" class="w-6"></h3>
+    <h1 class="text-3xl sm:text-6xl lg:text-[50px] font-Ovo">
+        Business Analyst and Cybersecurity Specialist based in Gauteng</h1>
+    
+
+    <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <a href="#contact"
+        class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6]
+        to-[#da7d20] text-white flex items-center gap-2 dark:border-transparent"> 
+        Contact Me<img src="./images/right-arrow-white.png"
+        alt="" class="w-4"></a>
+
+        <a href="./images/logo.png" download
+        class="px-10 py-3 border rounded-full border-gray-500 flex 
+        items-center gap-2 bg-white dark:text-black"> 
+        My Resume<img src="./images/download-icon.png"
+        alt="" class="w-4"></a>
+    </div>
+
+</div>
+
+<!---------------------About Me--------------------->
+<div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
+    <h2 class="text-center text-5xl font-Ovo">About Me</h2>
+
+    <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        <div class="max-w-max mx-auto relative">
+            <img src="./images/user-image.png" alt="" class="w-64 sm:w-80 
+            rounded-3x1 max-w-none">
+
+            <div class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 
+            rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] 
+            flex items-center justify-center">
+                <img src="./images/circular-text.png" alt="" class="w-full
+                animate-spin_slow">
+                <img src="./images/dev-icon.png" alt="" class="w-1/4 absolute top-1/2 
+                left-1/3 -transparent-x-1/2 -translate-y-1/2">
+            </div>
+
+        </div>
+        <div class="flex-1"> 
+            <p class="mb-10 max-w-2xl font-Ovo"> 
+                I am a business analyst and cybersecurity specialist based in Gauteng, South Africa, 
+                with extensive experience at notable organizations such as Vaal University of Technology, UVU Africa, and Multichoice Group. 
+                My work focuses on enhancing organizational security and driving operational excellence through data-driven insights. 
+                I am passionate about solving complex problems and fostering collaboration to empower businesses in navigating today’s digital landscape while achieving their goals.</p>
+
+            <ul class="grid grid-cols-1 sm:grid-cols-auto gap-6 max-w-2xl">
+                <li class="border-[0.5px] border-gray-400 rounded-xl p-6
+                    cursor-pointer hover:bg-lightHover hover:-translate-y-1
+                    duration-500 hover:shadow-black
+                    dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                    <img src="./images/code-icon.png" alt="" class="w-7 mt-3 dark:hidden">
+                    <img src="./images/code-icon-dark.png" alt="" class="w-7 mt-3 hidden
+                    dark:block">
+                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
+                    <p class="text-gray-600 text-sm dark:text-white/80">Python, SQL, HTML, CSS, JavaScript, React Js, Next Js, Java, Linux</p> 
+                </li>
+                <li class="border-[0.5px] border-gray-400 rounded-xl p-6
+                    cursor-pointer hover:bg-lightHover hover:-translate-y-1
+                    duration-500 hover:shadow-black 
+                    dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                    <img src="./images/edu-icon.png" alt="" class="w-7 mt-3 dark:hidden">
+                    <img src="./images/edu-icon-dark.png" alt="" class="w-7 mt-3 hidden
+                    dark:block">
+                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
+                    <p class="text-gray-600 text-sm dark:text-white/80">Postgraduate Diploma / Honors Degree in Information Technology (Distinction) - 2024</p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">-------------------------------</p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">Advanced Diploma / Bachelors Degree in Information Technology (Distinction) - 2023</p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">-------------------------------</p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">Diploma in Information Technology - 2022</p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">-------------------------------</p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">Matric/ Grade 12 - 2016</p>
+                </li>
+                <li class="border-[0.5px] border-gray-400 rounded-xl p-6
+                    cursor-pointer hover:bg-lightHover hover:-translate-y-1
+                    duration-500 hover:shadow-black 
+                    dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                    <img src="./images/project-icon.png" alt="" class="w-7 mt-3 dark:hidden">
+                    <img src="./images/project-icon-dark.png" alt="" class="w-7 mt-3 hidden
+                    dark:block">
+                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Experience</h3>
+                    <p class="text-gray-600 text-sm dark:text-white/80"> UVU Africa</p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">{Cybersecurity intern} </p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">-------------------------------</p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">Multichoice Group</p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">{Cybersecurity intern} </p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">-------------------------------</p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">Vaal University of Technology</p>
+                    <p class="text-gray-600 text-sm dark:text-white/80">{Junior Desktop Support Engineer}</p>
+                </li>
+            </ul> 
+            
+            <h4 class="my-6 text-gray-700 font-Ovo dark:text-white/80">Tools I Use:</h4>
+            <div class="max-w-lg mx-auto">
+            <ul class="flex flex-wrap items-center gap-3 sm:gap-5">
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square 
+                border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500">
+                    <img src="./images/vscode.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square 
+                border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500">
+                    <img src="./images/mongodb.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square 
+                border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500">
+                    <img src="./images/powerbi.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square 
+                border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500">
+                    <img src="./images/jupyternotebook.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square 
+                border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500">
+                    <img src="./images/sql.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square 
+                border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500">
+                    <img src="./images/excel.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square 
+                border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500">
+                    <img src="./images/oracle.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square 
+                border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500">
+                    <img src="./images/wireshack.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square 
+                border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500">
+                    <img src="./images/nmap.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square 
+                border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500">
+                    <img src="./images/openvas.png" alt="" class="w-5 sm:w-7">
+                </li>
+                <li class="flex items-center justify-center w-12 sm:w-14 aspect-square 
+                border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500">
+                    <img src="./images/linux.png" alt="" class="w-5 sm:w-7">
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>        
+
+</div>
+
+<!-------------------------Services-------------------------->
+<div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h4 class="text-center mb-2 text-lg font-Ovo">What I Offer</h4>
+    <h2 class="text-center text-5xl font-Ovo">My Services</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">As a business analyst and cybersecurity specialist, 
+        I provide a range of services designed to help organizations achieve operational 
+        excellence and ensure robust digital security.</p>
+
+    <div class="grid grid-cols-auto gap-6 my-10">
+        <div class="border border-gray-400 rounded-lg px-8 py-12
+        hover:shadow-black cursor-pointer hover:bg-[#00FFFF] 
+        hover:-translate-y-l duration-500 dark:hover:bg-darkHover 
+        dark:hover:shadow-white">
+            <img src="./images/business-analyst-icon.png" alt="" class="w-10">
+            <h3 class="text-lg my-4 text-gray-700 dark:text-white">Business Analyst</h3>
+            <p class="text-sm text-gray-600 leading-5 dark:text-white/80"> Business Analyst primary 
+                responsibility is to use data analytics to comprehend 
+                corporate procedures, spot potential for development, and create
+                plans to maximize production and efficiency.</p>
+            
+        </div>
+        <div class="border border-gray-400 rounded-lg px-8 py-12
+        hover:shadow-black cursor-pointer hover:bg-[#00FFFF] 
+        hover:-translate-y-l duration-500 dark:hover:bg-darkHover 
+        dark:hover:shadow-white">
+            <img src="./images/cybersecurity-icon.png" alt="" class="w-10">
+            <h3 class="text-lg my-4 text-gray-700 dark:text-white">Cybersecurity Specialist</h3>
+            <p class="text-sm text-gray-600 leading-5 dark:text-white/80">Cybersecurity Specialist is responsible for safeguarding digital data from theft, damage, and unauthorized access. 
+                They develop, implement, and test security measures to protect an organization's systems, networks, and data. This includes monitoring for potential threats, 
+                responding to security incidents, and ensuring compliance with regulatory standards.</p>
+            
+        </div>
+ 
+    </div>
+
+    </div>
+
+<!--------------------My Work--------------------> 
+<div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
+    <h4 class="text-center mb-2 text-lg font-Ovo">My Portfolio</h4>
+    <h2 class="text-center text-5xl font-Ovo">My Latest Work</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">Welcome to my portfolio website!
+        Explore a collection of projects showcasing my expertise in business analyst and 
+        cybersecurity.</p>
+
+    <div class="grid grid-cols-auto my-10 gap-5 dark:text-black">
+        <div class="aspect-square bg-[url('./images/work-1.png')] bg-no-repeat
+        bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-orange-500 w-10/12 rounded-md absolute bottom-5 left-1/2
+            -translate-x-1/2 py-3 px-5 flex items-center justify-between
+            duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Business Analysis Project</h2>
+                    <p2 class="text-sm text-gray-700">B.I Implementation </p2>
+                </div>
+               
+
+            </div>
+        </div>
+        <div class="aspect-square bg-[url('./images/work-2.png')] bg-no-repeat
+        bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2
+            -translate-x-1/2 py-3 px-5 flex items-center justify-between
+            duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Frontend Project</h2>
+                    <p2 class="text-sm text-gray-700">Web Design</p2>
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="aspect-square bg-[url('./images/work-3.png')] bg-no-repeat
+        bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-orange-500 w-10/12 rounded-md absolute bottom-5 left-1/2
+            -translate-x-1/2 py-3 px-5 flex items-center justify-between
+            duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Frontent Project</h2>
+                    <p2 class="text-sm text-gray-700">Web Design </p2>
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="aspect-square bg-[url('./images/work-4.png')] bg-no-repeat
+        bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2
+            -translate-x-1/2 py-3 px-5 flex items-center justify-between
+            duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Cybersecurity Project</h2>
+                    <p2 class="text-sm text-gray-700">Censornet </p2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="aspect-square bg-[url('./images/work-5.png')] bg-no-repeat
+        bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-orange-500 w-10/5 rounded-md absolute bottom-2 left-1/2
+            -translate-x-1/2 py-3 px-5 flex items-center justify-between
+            duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Cybersecurity Project</h2>
+                    <p2 class="text-sm text-gray-700">Nikto</p2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="aspect-square bg-[url('./images/work-6.png')] bg-no-repeat
+        bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/5 rounded-md absolute bottom-2 left-1/2
+            -translate-x-1/2 py-0 px-5 flex items-center justify-between
+            duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Cybersecurity Project</h2>
+                    <p2 class="text-sm text-gray-700">OpenVas</p2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="aspect-square bg-[url('./images/work-7.png')] bg-no-repeat
+        bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-orange-500 w-10/5 rounded-md absolute bottom-2 left-1/2
+            -translate-x-1/2 py-0 px-5 flex items-center justify-between
+            duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Cybersecurity Project</h2>
+                    <p2 class="text-sm text-gray-700">WireShark</p2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="aspect-square bg-[url('./images/work-8.png')] bg-no-repeat
+        bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-white w-10/5 rounded-md absolute bottom-2 left-1/2
+            -translate-x-1/2 py-0 px-5 flex items-center justify-between
+            duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Cybersecurity Project</h2>
+                    <p2 class="text-sm text-gray-700">Network Topology</p2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="aspect-square bg-[url('./images/work-9.png')] bg-no-repeat
+        bg-cover bg-center rounded-lg relative cursor-pointer group">
+
+            <div class="bg-orange-500 w-10/5 rounded-md absolute bottom-2 left-1/2
+            -translate-x-1/2 py-0 px-5 flex items-center justify-between
+            duration-500 group-hover:bottom-7">
+                <div>
+                    <h2 class="font-semibold">Cybersecurity Project</h2>
+                    <p2 class="text-sm text-gray-700">NMap</p2>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+<!----------------------------Contact---------------------------------->
+<div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')]
+bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none">
+
+    <h4 class="text-center mb-2 text-lg font-Ovo">Connect With Me</h4>
+    <h2 class="text-center text-5xl font-Ovo">Get In Touch</h2>
+    <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">I would love to hear from you!
+    If you have any questions, comments, or feedback, please use the form below.</p>
+    
+    <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+
+        <input type="hidden" name="access_key" value="af5d4d49-6778-4654-ba5d-a4509e8f9256">
+
+
+        <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+            <input type="text" placeholder="Enter Your Name:" class="flex-1 p-3
+            outline-none border-[0.5px] border-gray-400 rounded-md bg-white
+            dark:bg-darkHover/30 dark:border-white/90" required name="name">
+
+            <input type="email" placeholder="Enter Your Email:" class="flex-1 p-3
+            outline-none border-[0.5px] border-gray-400 rounded-md bg-white
+            dark:bg-darkHover/30 dark:border-white/90" required name="email">
+        </div>
+        <textarea rows="6" placeholder="Enter Your Message:" class="w-full p-4 outline-none
+        border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90" required name="message"></textarea>
+        
+        <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80
+        text-white rounded-full mx-auto hover;bg-black duration-500 
+        dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover">Submit Now
+            <img src="./images/right-arrow-white.png" alt="" class="w-4">
+        </button>
+    </form>
+</div>
+<script>
+    document.getElementById('submitBtn').addEventListener('click', function () {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        const errorMessage = document.getElementById('errorMessage');
+
+        if (!name || !email || !message) {
+            errorMessage.classList.remove('hidden');
+        } else {
+            errorMessage.classList.add('hidden');
+            document.getElementById('contactForm').submit();
+        }
+    });
+</script>
+
+<!------------------Footer------------------------>
+<div class="mt-20">
+    <div class="text-center">
+        <img src="./images/logo.png" alt="" class="w-36 mx-auto mb-2 dark:hidden">
+        <img src="./images/logo_dark.png" alt="" class="w-36 mx-auto mb-2 hidden dark:block">
+
+        <div class="w-max flex items-center gap-2 mx-auto">
+            <img src="./images/mail_icon.png" alt="" class="w-6 dark:hidden">
+            <img src="./images/mail_icon_dark.png" alt="" class="w-6 hidden dark:block">
+
+            moshoadibamle@gmail.com
+        </div>
+    </div>
+    <div class="text-center sm:flex items-center justify-between border-t border-gray-400
+    mx-[10%] mt-12 py-6">
+    <p>© 2024 Lerato Moshoadiba. All rights reserved.</p>
+    <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+        <li><a href="https://github.com/Lerat0Moshoadiba">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/lerato-moshoadiba-267171242">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+    </ul>
+    </div>
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
